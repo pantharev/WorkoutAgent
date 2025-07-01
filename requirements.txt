@@ -1,0 +1,19 @@
+# Core FastAPI dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Pydantic AI for intelligent agents
+pydantic-ai==0.0.13
+
+# Environment variables
+python-dotenv==1.0.0
+
+# HTTP client (if needed for external APIs)
+httpx==0.25.2
+
+# Streamlit for UI
+streamlit==1.29.0
+
+# Additional utilities
+typing-extensions==4.8.0
+requests==2.31.0
