@@ -267,17 +267,17 @@ def display_workout_plan(workout_plan):
     st.markdown('<div class="section-header">🏃 Your Personalized Workout Plan</div>', unsafe_allow_html=True)
     
     for i, exercise in enumerate(workout_plan, 1):
-        with st.expander(f"Exercise {i}: {exercise['name']}", expanded=True):
+        with st.expander(f"Exercise {i}: {exercise.name}", expanded=True):
             col1, col2, col3 = st.columns(3)
             with col1:
-                st.metric("Sets", exercise['sets'])
+                st.metric("Sets", exercise.sets)
             with col2:
-                st.metric("Reps", exercise['reps'])
+                st.metric("Reps", exercise.reps)
             with col3:
-                st.metric("Rest Time", f"{exercise['rest_time']}s")
+                st.metric("Rest Time", f"{exercise.rest_time}s")
             
-            if exercise.get('instructions'):
-                st.markdown(f"**Instructions:** {exercise['instructions']}")
+            if exercise.instructions:
+                st.markdown(f"**Instructions:** {exercise.instructions}")
 
 def display_nutrition_plan(nutrition_plan):
     """Display nutrition plan in a formatted way"""
@@ -286,7 +286,7 @@ def display_nutrition_plan(nutrition_plan):
     # Group meals by timing
     meals_by_timing = {}
     for meal in nutrition_plan:
-        timing = meal['timing'].title()
+        timing = meal.timing.title()
         if timing not in meals_by_timing:
             meals_by_timing[timing] = []
         meals_by_timing[timing].append(meal)
@@ -295,20 +295,20 @@ def display_nutrition_plan(nutrition_plan):
     for timing, meals in meals_by_timing.items():
         st.markdown(f"### {timing}")
         for meal in meals:
-            with st.expander(f"{meal['name']} - {meal['calories']} calories", expanded=False):
+            with st.expander(f"{meal.name} - {meal.calories} calories", expanded=False):
                 col1, col2, col3, col4 = st.columns(4)
                 with col1:
-                    st.metric("Calories", meal['calories'])
+                    st.metric("Calories", meal.calories)
                 with col2:
-                    st.metric("Protein", f"{meal['protein']}g")
+                    st.metric("Protein", f"{meal.protein}g")
                 with col3:
-                    st.metric("Carbs", f"{meal['carbs']}g")
+                    st.metric("Carbs", f"{meal.carbs}g")
                 with col4:
-                    st.metric("Fats", f"{meal['fats']}g")
+                    st.metric("Fats", f"{meal.fats}g")
                 
-                if meal.get('ingredients'):
+                if meal.ingredients:
                     st.markdown("**Ingredients:**")
-                    for ingredient in meal['ingredients']:
+                    for ingredient in meal.ingredients:
                         st.markdown(f"• {ingredient}")
 
 # =============================================================================
