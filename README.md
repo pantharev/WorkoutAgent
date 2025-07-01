@@ -1,6 +1,6 @@
 # 🏋️ Workout Agent - AI-Powered Fitness Advisor
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://apexworkoutagent.streamlit.app)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4-orange.svg)](https://openai.com/)
@@ -21,7 +21,7 @@ A comprehensive AI-powered fitness advisor that provides personalized workout pl
 
 ## 🚀 Live Demo
 
-Try the live application: [Workout Agent on Streamlit Cloud](https://your-app-name.streamlit.app)
+Try the live application: [Workout Agent on Streamlit Cloud](https://apexworkoutagent.streamlit.app)
 
 ## 📸 Screenshots
 
@@ -38,7 +38,7 @@ Try the live application: [Workout Agent on Streamlit Cloud](https://your-app-na
 ## 🚀 Quick Start
 
 ### Option 1: Use the Live App (Recommended)
-Visit the [live application](https://your-app-name.streamlit.app) - no setup required!
+Visit the [live application](https://apexworkoutagent.streamlit.app) - no setup required!
 
 ### Option 2: Run Locally
 
@@ -155,7 +155,7 @@ Full API documentation available at `/docs` when running locally.
    OPENAI_API_KEY = "your_openai_api_key_here"
    ```
 
-6. **Your app will be live** at `https://your-app-name.streamlit.app`
+6. **Your app will be live** at `https://apexworkoutagent.streamlit.app`
 
 ## 🧪 Testing
 
@@ -237,7 +237,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 If you encounter any issues:
 
-1. Check the [live demo](https://your-app-name.streamlit.app) to see if it's working there
+1. Check the [live demo](https://apexworkoutagent.streamlit.app) to see if it's working there
 2. Verify your OpenAI API key is set correctly (for local development)
 3. Run the test suite: `python test_workout_agent.py`
 4. Check the [Issues](https://github.com/yourusername/WorkoutAgent/issues) page
