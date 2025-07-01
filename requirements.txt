@@ -8,8 +8,8 @@ pydantic-ai==0.0.13
 # Environment variables
 python-dotenv==1.0.0
 
-# HTTP client (if needed for external APIs)
-httpx==0.25.2
+# HTTP client - Updated to be compatible with pydantic-ai
+httpx>=0.27.2
 
 # Streamlit for UI
 streamlit==1.29.0
